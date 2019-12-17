@@ -1,0 +1,5 @@
+org.springframework.context.ApplicationContextInitializer=\
+com.hcx.startertest.config.HcxApplicationContextInitializer
+
+org.springframework.boot.SpringApplicationRunListener=\
+com.hcx.startertest.config.HcxSpringApplicationRunListener
