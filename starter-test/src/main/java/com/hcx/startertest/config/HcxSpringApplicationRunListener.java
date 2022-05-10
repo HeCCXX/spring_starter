@@ -1,5 +1,6 @@
 package com.hcx.startertest.config;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringApplicationRunListener;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.env.ConfigurableEnvironment;
@@ -12,6 +13,10 @@ import org.springframework.core.env.ConfigurableEnvironment;
  * @Version 1.0
  **/
 public class HcxSpringApplicationRunListener implements SpringApplicationRunListener {
+    //启动问题，需要一个构造器和传参
+    public HcxSpringApplicationRunListener(SpringApplication application,String[] args) {
+    }
+
     @Override
     public void starting() {
         System.out.println("SpringApplicationRunListener...starting...");
